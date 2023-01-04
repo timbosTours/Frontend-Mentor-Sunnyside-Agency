@@ -1,5 +1,5 @@
 import * as React from 'react';
-import orangeImg from '../public/images/desktop/image-gallery-orange.jpg'
+
 
 interface NavbarProps {
     heading: string; 
@@ -11,7 +11,7 @@ interface NavbarProps {
 
 const Navbar: React.FunctionComponent<NavbarProps> = ({ heading, onButton1Click, onButton2Click, onButton3Click, onButton4Click }) => {
     return (
-        <nav className="flex items-center w-full justify-between px-4 py-3 ">
+        <nav className="flex absolute items-center w-full justify-between px-4 py-3 ">
         <div className="flex items-center font-bold text-white mr-6">
         {heading}
         </div>
