@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Image from 'next/image';
 
 
 interface NavbarProps {
@@ -28,6 +29,14 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ heading, onButton1Click,
         <button onClick={onButton4Click} className="px-4 py-2 font-bold text-black bg-white rounded-full hover:bg-transparent focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
             Contact
         </button>
+        </div>
+                <div className='sm:hidden' >
+                    <Image
+                        src={"/images/icon-hamburger.svg"}
+                        alt="hamburger icon"
+                        width={50}
+                        height={50}
+                    />
         </div>
     </nav>
     );
