@@ -10,7 +10,7 @@ interface NavbarProps {
 const Navbar: React.FunctionComponent<NavbarProps> = ({ heading }) => {
     return (
         <nav className="flex absolute items-center w-full justify-between px-4 py-3 ">
-        <div className="flex items-center font-bold text-white mr-6">
+        <div className="flex items-center text-2xl font-bold text-white mr-6">
         {heading}
         </div>
         <div className='hidden md:block'>
