@@ -8,8 +8,19 @@ const Navbar = () => {
 
     return (
         <nav className="flex absolute items-center w-full justify-between px-4 py-3 z-50">
-        <div className="flex items-center text-2xl font-bold text-white mr-6">
+        <div className="flex items-center text-3xl font-bold text-white mr-6">
         <h1 tabIndex={1}>sunnyside</h1>
+        </div>
+            <div className='md:hidden' >
+                <button>
+                    <Image
+                        className="m-4"
+                        src={"/images/icon-hamburger.svg"}
+                        alt="hamburger icon"
+                        width={40}
+                        height={40}
+                    />
+                </button>
         </div>
         <ul className='hidden md:block'>
         <Link href="/About" className="nav-link">
@@ -25,16 +36,6 @@ const Navbar = () => {
             Contact
         </Link>
         </ul>
-            <div className='md:hidden' >
-                <button>
-                    <Image
-                        src={"/images/icon-hamburger.svg"}
-                        alt="hamburger icon"
-                        width={50}
-                        height={50}
-                    />
-                </button>
-        </div>
     </nav>
     );
 };
