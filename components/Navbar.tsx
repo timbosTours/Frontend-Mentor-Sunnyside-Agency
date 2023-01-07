@@ -1,39 +1,39 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 
-interface NavbarProps {
-    heading: string;
-}
+const Navbar = () => {
+    // const [isOpen, toggleOpen] = useState(null)
 
-const Navbar: React.FunctionComponent<NavbarProps> = ({ heading }) => {
     return (
-        <nav className="flex absolute items-center w-full justify-between px-4 py-3 ">
+        <nav className="flex absolute items-center w-full justify-between px-4 py-3 z-50">
         <div className="flex items-center text-2xl font-bold text-white mr-6">
-        {heading}
+        <h1 tabIndex={1}>sunnyside</h1>
         </div>
-        <div className='hidden md:block'>
-        <Link href="/About" className="px-4 py-2 font-bold text-white rounded-full hover:bg-transparent focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+        <ul className='hidden md:block'>
+        <Link href="/About" className="nav-link">
             About
         </Link>
-        <Link href="/Services" className="px-4 py-2 font-bold text-white  rounded-full hover:bg-transparent focus:outline-none focus:shadow-outline-blue active:bg-blue-800 mr-4">
+        <Link href="/Services" className="nav-link">
             Services
         </Link>
-        <Link href="Projects" className="px-4 py-2 font-bold text-white  rounded-full hover:bg-transparent focus:outline-none focus:shadow-outline-blue active:bg-blue-800 mr-4">
+        <Link href="Projects" className="nav-link">
             Projects
         </Link>
         <Link href="Contact" className="px-4 py-2 font-bold text-black bg-white rounded-full hover:bg-transparent focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
             Contact
         </Link>
-        </div>
-                <div className='sm:hidden' >
+        </ul>
+            <div className='md:hidden' >
+                <button>
                     <Image
                         src={"/images/icon-hamburger.svg"}
                         alt="hamburger icon"
                         width={50}
                         height={50}
                     />
+                </button>
         </div>
     </nav>
     );

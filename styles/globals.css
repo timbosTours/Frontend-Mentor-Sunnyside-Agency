@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .nav-link {
+    @apply px-4 py-2 font-bold text-white rounded-full hover:bg-transparent focus:outline-none active:bg-blue-800
+  }
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
