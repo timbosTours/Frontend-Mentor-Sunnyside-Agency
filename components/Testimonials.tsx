@@ -73,7 +73,36 @@ function Testimonials() {
                     <h3 className="text-gray-400">Business Owner</h3>
                 </div>
             </div>
-            
+            <div className="flex">
+                <Image
+                    className="h-1/4 w-1/4"
+                    src="/images/mobile/image-gallery-milkbottles.jpg"
+                    alt=""
+                    width={180}
+                    height={180}
+                />
+                <Image
+                    className="h-1/4 w-1/4"
+                    src="/images/mobile/image-gallery-orange.jpg"
+                    alt=""
+                    width={180}
+                    height={180}
+                />
+                <Image
+                    className="h-1/4 w-1/4"
+                    src="/images/mobile/image-gallery-cone.jpg"
+                    alt=""
+                    width={180}
+                    height={180}
+                />
+                <Image
+                    className="h-1/4 w-1/4"
+                    src="/images/mobile/image-gallery-sugar-cubes.jpg"
+                    alt=""
+                    width={180}
+                    height={180}
+                />
+            </div>
         </div>
     )
 }
