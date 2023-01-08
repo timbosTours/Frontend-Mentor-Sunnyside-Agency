@@ -1,19 +1,33 @@
 import React from 'react'
-import { Fraunces } from '@next/font/google'
+import { Barlow, Fraunces } from '@next/font/google'
 import Link from 'next/link'
-
-
-// TO DO!!!!
-        // - move and border radius underline on learn more link.
+import UnderlineYellow from './UnderlineYellow'
+import UnderlineRose from './UnderlineRose'
+import Image from 'next/image'
+import Testimonials from './Testimonials'
 
 
 const fraunces = Fraunces({
     weight: ['900'],
     subsets: ['latin']
 })
+
+const barlow = Barlow({
+    weight: ['600'],
+    subsets: ['latin']
+})
+
 function Content() {
     return (
-    <section className="h-96 w-96 text-center">
+        <>
+            <Image
+            className="md:hidden"
+            src='/images/mobile/image-transform.jpg'
+            alt="egg"
+            width={800}
+            height={1000}
+        />
+    <section className="h-96 w-96 text-center m-20 mb-1">
             <div className={"text-gray-900 text-4xl weight"}>
             <h1 className={fraunces.className}>Transform your <br /> brand</h1>
             </div>
@@ -21,11 +35,64 @@ function Content() {
     Engage your clients through compelling visuals that do most of the marketing for you.</p>
             <div className={fraunces.className}>
             <Link
-                className="text-xl underline decoration-yellow-200 decoration-8"
-                href="/about"
-            >LEARN MORE</Link>
+                className="text-xl"
+                    href="/about"
+                >LEARN MORE</Link>
+                <UnderlineYellow/>
             </div>
-        </section>
+            </section>
+            <Image
+            className="md:hidden"
+            src='/images/mobile/image-stand-out.jpg'
+            alt="egg"
+            width={800}
+            height={1000}
+            />
+            <section className="h-96 w-96 text-center m-20 mb-1">
+            <div className={"text-gray-900 text-4xl weight"}>
+            <h1 className={fraunces.className}>Stand out too the <br /> right audience</h1>
+            </div>
+            <p className="m-3 text-gray-500 text-xl"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+            <div className={fraunces.className}>
+            <Link
+                className="text-xl"
+                    href="/about"
+                >LEARN MORE</Link>
+                <UnderlineRose/>
+            </div>
+            </section>
+            <div className="relative">
+            <Image
+                className="md:hidden"
+            src='/images/mobile/image-graphic-design.jpg'
+            alt="egg"
+            width={800}
+            height={1000}    
+                />
+                <div className="absolute top-3/4 text-center text-4xl text-emerald-900">
+                    <h1 className={fraunces.className}>Graphic Design</h1>
+                    <div className={barlow.className}>
+                        <p className="text-xl m-3">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
+                    </div>
+                </div>
+            </div>
+            <div className="relative">
+            <Image
+                className="md:hidden"
+            src='/images/mobile/image-photography.jpg'
+            alt="egg"
+            width={800}
+            height={1000}    
+                />
+                <div className="absolute top-3/4 text-center text-4xl text-cyan-800">
+                    <h1 className={fraunces.className}>Photography</h1>
+                    <div className={barlow.className}>
+                        <p className="text-xl m-4">  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                    </div>
+                </div>
+            </div>
+        <Testimonials/>
+        </>
     )
 }
 

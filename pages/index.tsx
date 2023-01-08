@@ -21,14 +21,9 @@ export default function Home() {
         <Navbar/>
         <Banner/>
       <main className={styles.main} >
-        <Image
-            className="md:hidden"
-            src='/images/mobile/image-transform.jpg'
-            alt="egg"
-            width={800}
-            height={1000}
-        />
-        <Content/>
+        
+        <Content />
+        
       </main>
     </>
   )
