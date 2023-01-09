@@ -61,7 +61,7 @@ function Testimonials() {
                     width={80}
                     height={80}
             />
-            <div>
+            <div className='mb-10'>
                 <div className={barlow.className}>
                     <p className="m-10 text-gray-600 text-lg">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
 </p>
@@ -73,34 +73,34 @@ function Testimonials() {
                     <h3 className="text-gray-400">Business Owner</h3>
                 </div>
             </div>
-            <div className="flex">
+            <div className="grid grid-cols-2">
                 <Image
-                    className="h-1/4 w-1/4"
+                    className=""
                     src="/images/mobile/image-gallery-milkbottles.jpg"
                     alt=""
-                    width={180}
-                    height={180}
+                    width={400}
+                    height={400}
                 />
                 <Image
-                    className="h-1/4 w-1/4"
+                    className=""
                     src="/images/mobile/image-gallery-orange.jpg"
                     alt=""
-                    width={180}
-                    height={180}
+                    width={400}
+                    height={400}
                 />
                 <Image
-                    className="h-1/4 w-1/4"
+                    className=""
                     src="/images/mobile/image-gallery-cone.jpg"
                     alt=""
-                    width={180}
-                    height={180}
+                    width={400}
+                    height={400}
                 />
                 <Image
-                    className="h-1/4 w-1/4"
+                    className=""
                     src="/images/mobile/image-gallery-sugar-cubes.jpg"
                     alt=""
-                    width={180}
-                    height={180}
+                    width={400}
+                    height={400}
                 />
             </div>
         </div>
