@@ -6,6 +6,7 @@ import Banner from '../components/Banner'
 import Image from 'next/image'
 import Link from 'next/link'
 import Content from '../components/Content'
+import Footer from '../components/Footer'
 
 
 
@@ -23,7 +24,7 @@ export default function Home() {
       <main className={styles.main} >
         
         <Content />
-        
+        <Footer/>
       </main>
     </>
   )
