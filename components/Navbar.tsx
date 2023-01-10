@@ -1,18 +1,20 @@
 import React, {useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Dropbox from './Dropbox';
 
 
 const Navbar = () => {
-    // const [isOpen, toggleOpen] = useState(null)
+    const [isOpen, toggleOpen] =useState(false)
 
     return (
+        <div>
         <nav className="flex absolute items-center w-full justify-between px-4 py-3 z-50">
         <div className="flex items-center text-3xl font-bold text-white mr-6">
         <h1 tabIndex={1}>sunnyside</h1>
         </div>
             <div className='md:hidden' >
-                <button>
+                <button onClick={()=> (!isOpen)}>
                     <Image
                         className="m-4"
                         src={"/images/icon-hamburger.svg"}
@@ -36,7 +38,8 @@ const Navbar = () => {
             Contact
         </Link>
         </ul>
-    </nav>
+        </nav>
+        </div>
     );
 };
 

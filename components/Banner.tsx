@@ -26,7 +26,7 @@ function Banner() {
                     width={2000}
                     height={1000}
                 />
-                <div className="absolute justify-center align-middle">
+                <div className="absolute justify-center">
                     <Dropbox />
                 </div>
                     <h1 className="banner-heading leading-tight uppercase text-6xl text-center  text-white absolute top-1/4 "> we are <br /> creatives</h1>
