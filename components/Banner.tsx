@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Fraunces } from '@next/font/google'
+import Dropbox from './Dropbox'
 
 const fraunces = Fraunces({
     weight: '900',
@@ -25,6 +26,9 @@ function Banner() {
                     width={2000}
                     height={1000}
                 />
+                <div className="absolute justify-center align-middle">
+                    <Dropbox />
+                </div>
                     <h1 className="banner-heading leading-tight uppercase text-6xl text-center  text-white absolute top-1/4 "> we are <br /> creatives</h1>
                 <img className="absolute h-44 top-1/2 lg:h-60" src="/images/icon-arrow-down.svg" alt="down arrow" />
             </header>

@@ -7,6 +7,11 @@
     @apply px-4 py-2 font-bold text-white rounded-full hover:bg-transparent focus:outline-none active:bg-blue-800
   }
 }
+@layer base {
+  .drop-link {
+    @apply px-40 py-4 pt-9 font-bold text-xl text-slate-500 flex text-center justify-center align-middle rounded-full hover:bg-transparent focus:outline-none active:bg-blue-800
+  }
+}
 
 @layer components {
   .banner-heading{
