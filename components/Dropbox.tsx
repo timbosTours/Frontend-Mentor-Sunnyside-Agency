@@ -15,13 +15,14 @@ const fraunces = Fraunces({
 
 function Dropbox() {
     return (
-        <div>
-            <div>
+        <div className="justify-center flex">
+            <div className="flex absolute top-16 -left-8">
                 <Triangle />
             </div>
-        <div className="absolute flex h-96 w-96 bg-white z-40 -left-48 -top-52">
+        <div className="absolute flex h-96 w-80 bg-white z-40 -top-36">
             <div>
-                <div className={barlow.className}>
+                    <div className={barlow.className}>
+                        <div className="w-80">
                 <Link href="/About" className="drop-link">
             About
         </Link>
@@ -32,9 +33,10 @@ function Dropbox() {
             Projects
                     </Link>
                     <div className={fraunces.className}>
-        <Link href="/Contact" className="px-8 py-4 m-32 font-bold text-neutral-800 bg-yellow-300 rounded-full hover:bg-slate-200 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+        <Link href="/Contact" className="px-6 py-4 m-24 font-bold text-neutral-800 bg-yellow-300 rounded-full hover:bg-slate-200 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
             CONTACT
-                        </Link>
+                                </Link>
+                            </div>
                     </div>
                 </div>
             </div>

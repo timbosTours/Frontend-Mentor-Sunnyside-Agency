@@ -1,10 +1,8 @@
+import { useState } from 'react'
 import Head from 'next/head'
-import { Fraunces } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
-import Image from 'next/image'
-import Link from 'next/link'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
 
@@ -19,7 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Navbar/>
+      <Navbar />
         <Banner/>
       <main className={styles.main} >
         

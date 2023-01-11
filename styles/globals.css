@@ -9,7 +9,7 @@
 }
 @layer base {
   .drop-link {
-    @apply px-40 py-4 pt-9 font-bold text-xl text-slate-500 flex text-center justify-center align-middle rounded-full hover:bg-transparent focus:outline-none active:bg-blue-800
+    @apply py-4 pt-9 font-bold text-xl text-slate-500 flex text-center justify-center hover:bg-transparent focus:outline-none active:bg-blue-800
   }
 }
 
