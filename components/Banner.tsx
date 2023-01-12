@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { Fraunces } from '@next/font/google'
 import Dropbox from './Dropbox'
+import Triangle from './Triangle'
+import Navbar from './Navbar'
 
 const fraunces = Fraunces({
     weight: '900',
@@ -11,7 +13,8 @@ const fraunces = Fraunces({
 function Banner() {
     return (
         <div className={fraunces.className}>
-            <header className="relative flex justify-center items-center" >
+            <header className="relative flex justify-center" >
+                <Navbar/>
                 <Image
                     className="md:hidden"
                     src={"/images/mobile/image-header.jpg"}
@@ -27,10 +30,13 @@ function Banner() {
                     height={1000}
                 />
                 <div className="absolute justify-center">
-                    <Dropbox />
                 </div>
-                    <h1 className="banner-heading leading-tight uppercase text-6xl text-center  text-white absolute top-1/4 "> we are <br /> creatives</h1>
-                <img className="absolute h-44 top-1/2 lg:h-60" src="/images/icon-arrow-down.svg" alt="down arrow" />
+                    <h1 className="banner-heading leading-tight uppercase text-4xl text-center  text-white absolute top-1/4 "> we are <br /> creatives</h1>
+                <img className="absolute h-32 top-1/2 lg:h-60" src="/images/icon-arrow-down.svg" alt="down arrow" />
+                
+            {/* <Triangle />
+                    <Dropbox /> */}
+                
             </header>
         </div>
     )

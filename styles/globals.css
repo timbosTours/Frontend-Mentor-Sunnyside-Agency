@@ -9,12 +9,12 @@
 }
 @layer base {
   .drop-link {
-    @apply py-4 pt-9 font-bold text-xl text-slate-500 flex text-center justify-center hover:bg-transparent focus:outline-none active:bg-blue-800
+    @apply py-2 pt-9 font-bold text-xl text-slate-500 flex text-center justify-center hover:bg-transparent focus:outline-none active:bg-blue-800
   }
 }
 
 @layer components {
   .banner-heading{
-    letter-spacing: 10px;
+    letter-spacing: 6px;
   }
 }

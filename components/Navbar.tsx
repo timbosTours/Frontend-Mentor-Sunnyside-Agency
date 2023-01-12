@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Dropbox from './Dropbox';
-
 
 const Navbar = () => {
-
+    const [isOpen, toggleOpen] = useState('none')
+    
     return (
         <div>
-        <nav className="flex absolute items-center w-96 justify-between px-4 py-3 z-50">
+        <nav className="flex absolute w-full justify-between px-4 py-3 z-50">
         <div className="flex items-center text-3xl font-bold text-white mr-6">
         <h1 tabIndex={1}>sunnyside</h1>
         </div>
@@ -37,7 +36,7 @@ const Navbar = () => {
             Contact
         </Link>
         </ul>
-        </nav>
+            </nav>
         </div>
     );
 };
