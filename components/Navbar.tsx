@@ -1,24 +1,29 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Barlow } from '@next/font/google';
+
+const barlow = Barlow({
+    weight: [ '700'],
+    subsets: ['latin']
+})
 
 const Navbar = () => {
-    const [isOpen, toggleOpen] = useState('none')
     
     return (
-        <div>
+        <div className={barlow.className}>
         <nav className="flex absolute w-full justify-between px-4 py-3 z-50">
-        <div className="flex items-center text-3xl font-bold text-white mr-6">
+        <div className="flex items-center text-2xl font-extrabold text-white mr-4">
         <h1 tabIndex={1}>sunnyside</h1>
         </div>
             <div className='md:hidden' >
                 <button>
                     <Image
-                        className="m-4"
+                        className="m-3"
                         src={"/images/icon-hamburger.svg"}
                         alt="hamburger icon"
-                        width={40}
-                        height={40}
+                        width={25}
+                        height={25}
                     />
                 </button>
         </div>
