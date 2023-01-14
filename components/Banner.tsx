@@ -1,20 +1,62 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
-import { Fraunces } from '@next/font/google'
+import { Fraunces, Barlow } from '@next/font/google'
 import Dropbox from './Dropbox'
 import Triangle from './Triangle'
-import Navbar from './Navbar'
+import Link from 'next/link'
 
 const fraunces = Fraunces({
     weight: '900',
     subsets: ['latin'],
 })
 
+const barlow = Barlow({
+    weight: ['600'],
+    subsets: ['latin']
+})
+
 function Banner() {
+    const [isOpen, toggleOpen] = useState(false);
+
+    function handleClick() {
+        toggleOpen(isOpen => !isOpen)
+    }
+
     return (
         <div className={fraunces.className}>
             <header className="relative flex justify-center" >
-                <Navbar/>
+                <div className={barlow.className}>
+        <nav className="flex absolute w-full justify-between px-4 py-3 z-50">
+        <div className="flex items-center text-2xl font-extrabold text-white mr-4">
+        <h1 tabIndex={1}>sunnyside</h1>
+        </div>
+            <div className='md:hidden' >
+                <button onClick={handleClick}>
+                    <Image
+                        className="m-3"
+                        src={"/images/icon-hamburger.svg"}
+                        alt="hamburger icon"
+                        width={25}
+                        height={25}
+                    />
+                </button>
+        </div>
+        <ul className='hidden md:block'>
+        <Link href="/About" className="nav-link">
+            About
+        </Link>
+        <Link href="/Services" className="nav-link">
+            Services
+        </Link>
+        <Link href="Projects" className="nav-link">
+            Projects
+        </Link>
+        <Link href="Contact" className="px-4 py-2 font-bold text-black bg-white rounded-full hover:bg-transparent focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+            Contact
+        </Link>
+        </ul>
+            </nav>
+        </div>
                 <Image
                     className="md:hidden"
                     src={"/images/mobile/image-header.jpg"}
@@ -33,9 +75,10 @@ function Banner() {
                 </div>
                     <h1 className="banner-heading leading-tight uppercase text-4xl text-center  text-white absolute top-1/4 "> we are <br /> creatives</h1>
                 <img className="absolute h-32 top-1/2 lg:h-60" src="/images/icon-arrow-down.svg" alt="down arrow" />
-                
-            {/* <Triangle />
-                    <Dropbox /> */}
+                <div className="flex absolute top-1/4">
+                {isOpen &&
+                        <Dropbox />}
+                </div>
                 
             </header>
         </div>

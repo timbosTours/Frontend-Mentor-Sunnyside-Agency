@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Barlow, Fraunces } from '@next/font/google'
+import Triangle from './Triangle'
 
 const barlow = Barlow({
     weight: ['600'],
@@ -15,9 +16,8 @@ const fraunces = Fraunces({
 function Dropbox() {
     return (
         <div className="justify-center flex">
-            <div className="flex absolute">
-            </div>
-        <div className="absolute flex h-80 w-80 bg-white z-40 top-36">
+        <div className=" h-80 w-80 bg-white z-40">
+            <Triangle/>
             <div>
                     <div className={barlow.className}>
                         <div className="w-80">
