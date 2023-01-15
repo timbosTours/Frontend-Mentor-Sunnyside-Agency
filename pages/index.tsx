@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import Content from '../components/Content'
 import Footer from '../components/Footer'

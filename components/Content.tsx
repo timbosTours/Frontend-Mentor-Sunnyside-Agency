@@ -44,7 +44,7 @@ function Content() {
             <Image
             className="md:hidden"
             src='/images/mobile/image-stand-out.jpg'
-            alt="egg"
+            alt="cup"
             width={800}
             height={1000}
             />
@@ -65,22 +65,22 @@ function Content() {
             <Image
                 className="md:hidden"
             src='/images/mobile/image-graphic-design.jpg'
-            alt="egg"
+            alt="cherry"
             width={800}
             height={1000}    
                 />
                 <div className="absolute top-3/4 text-center text-4xl text-emerald-900">
                     <h1 className={fraunces.className}>Graphic Design</h1>
                     <div className={barlow.className}>
-                        <p className="text-xl m-3">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
+                        <p className="text-xl">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
                     </div>
                 </div>
             </div>
-            <div className="relative">
+            <div className="relative m-0 p-0">
             <Image
                 className="md:hidden"
             src='/images/mobile/image-photography.jpg'
-            alt="egg"
+            alt="orange"
             width={800}
             height={1000}    
                 />
