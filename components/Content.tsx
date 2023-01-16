@@ -69,10 +69,10 @@ function Content() {
             width={800}
             height={1000}    
                 />
-                <div className="absolute top-3/4 text-center text-4xl text-emerald-900">
+                <div className="absolute top-2/3 text-center text-4xl text-emerald-900">
                     <h1 className={fraunces.className}>Graphic Design</h1>
                     <div className={barlow.className}>
-                        <p className="text-xl">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
+                        <p className="text-xl p-4">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
                     </div>
                 </div>
             </div>
@@ -84,10 +84,10 @@ function Content() {
             width={800}
             height={1000}    
                 />
-                <div className="absolute top-3/4 text-center text-4xl text-cyan-800">
+                <div className="absolute top-2/3 text-center text-4xl text-cyan-800">
                     <h1 className={fraunces.className}>Photography</h1>
                     <div className={barlow.className}>
-                        <p className="text-xl m-4">  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                        <p className="text-xl m-4 p-2">  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
                     </div>
                 </div>
             </div>

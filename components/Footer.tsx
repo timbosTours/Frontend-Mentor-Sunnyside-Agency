@@ -14,9 +14,9 @@ function Footer() {
         <div className={barlow.className}>
             <h1 className="text-5xl text-teal-700 font-black m-20 mb-14 tracking-wide">sunnyside</h1>       
             <ul className="text-teal-600 text-xl font-thin">
-                <Link className="m-5" href="/About">About</Link>
-                <Link className="m-5" href="/Services">Services</Link>
-                <Link className="m-5" href="/Projects">Projects</Link>
+                <Link className="m-7" href="/About">About</Link>
+                <Link className="m-7" href="/Services">Services</Link>
+                <Link className="m-7" href="/Projects">Projects</Link>
             </ul>
             </div>
             <div className="flex justify-center m-16">
