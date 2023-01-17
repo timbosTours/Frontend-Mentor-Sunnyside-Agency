@@ -11,7 +11,7 @@ const fraunces = Fraunces({
 })
 
 const barlow = Barlow({
-    weight: ['600'],
+    weight: ['600', '700'],
     subsets: ['latin']
 })
 
@@ -27,8 +27,8 @@ function Banner() {
             <header className="relative flex justify-center" >
                 <div className={barlow.className}>
         <nav className="flex absolute w-full justify-between px-4 py-3 z-50">
-        <div className="flex items-center text-2xl font-extrabold text-white mr-4">
-        <h1 tabIndex={1}>sunnyside</h1>
+        <div className="flex items-center text-2xl text-white mr-4 md:text-3xl md:-mt-2">
+        <h1 tabIndex={1} className="md:font-black">sunnyside</h1>
         </div>
             <div className='md:hidden' >
                 <button onClick={handleClick}>
@@ -41,7 +41,7 @@ function Banner() {
                     />
                 </button>
         </div>
-        <ul className='hidden md:block'>
+        <ul className='hidden md:block md:m-2'>
         <Link href="/About" className="nav-link">
             About
         </Link>
@@ -51,7 +51,7 @@ function Banner() {
         <Link href="Projects" className="nav-link">
             Projects
         </Link>
-        <Link href="Contact" className="px-4 py-2 font-bold text-black bg-white rounded-full hover:bg-transparent focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+        <Link href="Contact" className="px-4 py-2 font-bold text-black bg-white rounded-full hover:bg-transparent focus:outline-none focus:shadow-outline-blue active:bg-blue-800 mr-2">
             Contact
         </Link>
         </ul>
@@ -73,8 +73,8 @@ function Banner() {
                 />
                 <div className="absolute justify-center">
                 </div>
-                    <h1 className="banner-heading leading-tight uppercase text-4xl text-center  text-white absolute top-1/4 "> we are <br /> creatives</h1>
-                <img className="absolute h-32 top-1/2 lg:h-60" src="/images/icon-arrow-down.svg" alt="down arrow" />
+                    <h1 className="banner-heading leading-tight uppercase text-4xl text-center  text-white absolute top-1/4"> we are <br className="md:hidden"/> creatives</h1>
+                <img className="absolute h-32 top-1/2" src="/images/icon-arrow-down.svg" alt="down arrow" />
                 <div className="flex absolute top-1/4">
                 {isOpen &&
                         <Dropbox />}
