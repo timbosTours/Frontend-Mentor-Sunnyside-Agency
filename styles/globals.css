@@ -4,7 +4,7 @@
 
 @layer base {
   .nav-link {
-    @apply px-4 py-2 font-semibold text-white rounded-full hover:bg-transparent focus:outline-none active:bg-blue-800 m-2 md:text-lg
+    @apply px-4 py-2 font-semibold text-white rounded-full hover:bg-transparent focus:outline-none active:bg-blue-800 m-2 md:text-base
   }
 }
 @layer base {
