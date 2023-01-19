@@ -20,7 +20,7 @@ const barlow = Barlow({
 function Content() {
     return (
         <>
-            <div className="md:grid md:grid-cols-2 md:grid-rows-3">
+            <div className="md:grid md:grid-cols-2 md:grid-rows-2">
             <Image
             className="md:hidden"
             src='/images/mobile/image-transform.jpg'
@@ -85,7 +85,7 @@ function Content() {
             height={1000}    
                 />
             <Image
-                className="max-md:hidden "
+                className="max-md:hidden w-screen"
             src='/images/desktop/image-graphic-design.jpg'
             alt="cherry"
             width={800}
