@@ -20,7 +20,7 @@ const barlow = Barlow({
 function Content() {
     return (
         <>
-            <div className="md:grid md:grid-cols-2 md:grid-rows-2">
+            <section className="md:grid md:grid-cols-2">
             <Image
             className="md:hidden"
             src='/images/mobile/image-transform.jpg'
@@ -28,14 +28,7 @@ function Content() {
             width={800}
             height={1000}
         />
-            <Image
-            className=" max-md:hidden"
-            src='/images/desktop/image-transform.jpg'
-            alt="egg"
-            width={800}
-            height={1000}
-        />
-    <section className="h-96 text-center m-8 ">
+    <div className="h-96 text-center m-8 md:h-80 ">
             <div className={"text-gray-900 text-4xl weight"}>
             <h1 className={fraunces.className}>Transform your <br /> brand</h1>
             </div>
@@ -48,7 +41,14 @@ function Content() {
                 >LEARN MORE</Link>
                 <UnderlineYellow/>
             </div>
-            </section>
+            </div>
+            <Image
+            className=" max-md:hidden md:flex-col-reverse"
+            src='/images/desktop/image-transform.jpg'
+            alt="egg"
+            width={1000}
+            height={1000}
+        />
             <Image
             className="md:hidden"
             src='/images/mobile/image-stand-out.jpg'
@@ -60,10 +60,10 @@ function Content() {
             className=" max-md:hidden"
             src='/images/desktop/image-stand-out.jpg'
             alt="cup"
-            width={800}
+            width={1000}
             height={1000}
             />
-            <section className="h-96 text-center m-10">
+            <div className="h-96 text-center m-10 md:h-80">
             <div className={"text-gray-900 text-4xl weight"}>
             <h1 className={fraunces.className}>Stand out too the <br /> right audience</h1>
             </div>
@@ -75,8 +75,8 @@ function Content() {
                 >LEARN MORE</Link>
                 <UnderlineRose/>
             </div>
-            </section>
-            <div className="relative md:w-1/2">
+            </div>
+            <div className="relative ">
             <Image
                 className="md:hidden"
             src='/images/mobile/image-graphic-design.jpg'
@@ -85,10 +85,10 @@ function Content() {
             height={1000}    
                 />
             <Image
-                className="max-md:hidden w-screen"
+                className="max-md:hidden"
             src='/images/desktop/image-graphic-design.jpg'
             alt="cherry"
-            width={800}
+            width={1000}
             height={1000}    
                 />
                 <div className="absolute top-2/3 text-center text-4xl text-emerald-900">
@@ -98,7 +98,7 @@ function Content() {
                     </div>
                 </div>
             </div>
-            <div className="relative m-0 p-0 md:w-1/2">
+            <div className="relative m-0 p-0 ">
             <Image
                 className="md:hidden"
             src='/images/mobile/image-photography.jpg'
@@ -110,7 +110,7 @@ function Content() {
                 className="max-md:hidden"
             src='/images/desktop/image-photography.jpg'
             alt="orange"
-            width={800}
+            width={1000}
             height={1000}    
                 />
                 <div className="absolute top-2/3 text-center text-4xl text-cyan-800">
@@ -120,7 +120,7 @@ function Content() {
                     </div>
                 </div>
                 </div>
-            </div>
+            </section>
         <Testimonials/>
         </>
     )
