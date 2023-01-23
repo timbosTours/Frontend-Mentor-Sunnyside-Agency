@@ -19,8 +19,8 @@ const barlow = Barlow({
 
 function Content() {
     return (
-        <>
-            <section className="md:grid md:grid-cols-2">
+        <main>
+            <section className="md:grid md:grid-cols-2 place-items-center">
             <Image
             className="md:hidden"
             src='/images/mobile/image-transform.jpg'
@@ -28,22 +28,24 @@ function Content() {
             width={800}
             height={1000}
         />
-    <div className="h-96 text-center m-8 md:h-80 ">
-            <div className={"text-gray-900 text-4xl weight"}>
+                <div className="h-96 text-center m-8 md:h-52 md:text-left md:w-80">
+    
+            <div className="text-gray-900 text-4xl weight md:text-2xl ">
             <h1 className={fraunces.className}>Transform your <br /> brand</h1>
             </div>
-            <p className="m-7 text-gray-500 text-xl">  We are a full-service creative agency specializing in helping brands grow fast. 
+            <p className="m-7 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0">  We are a full-service creative agency specializing in helping brands grow fast. 
     Engage your clients through compelling visuals that do most of the marketing for you.</p>
             <div className={fraunces.className}>
             <Link
-                className="text-xl"
+                className="text-xl md:text-sm"
                     href="/about"
                 >LEARN MORE</Link>
                 <UnderlineYellow/>
-            </div>
+                        </div>
+    
             </div>
             <Image
-            className=" max-md:hidden md:flex-col-reverse"
+            className=" max-md:hidden"
             src='/images/desktop/image-transform.jpg'
             alt="egg"
             width={1000}
@@ -63,14 +65,14 @@ function Content() {
             width={1000}
             height={1000}
             />
-            <div className="h-96 text-center m-10 md:h-80">
-            <div className={"text-gray-900 text-4xl weight"}>
+            <div className="h-96 text-center m-10 md:h-60 md:text-left md:w-80">
+            <div className="text-gray-900 text-4xl md:text-2xl">
             <h1 className={fraunces.className}>Stand out too the <br /> right audience</h1>
             </div>
-            <p className="m-4 text-gray-500 text-xl"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+            <p className="m-4 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
             <div className={fraunces.className}>
             <Link
-                className="text-xl"
+                className="text-xl md:text-sm"
                     href="/about"
                 >LEARN MORE</Link>
                 <UnderlineRose/>
@@ -122,7 +124,7 @@ function Content() {
                 </div>
             </section>
         <Testimonials/>
-        </>
+        </main>
     )
 }
 
