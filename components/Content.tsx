@@ -33,7 +33,7 @@ function Content() {
             <div className="text-gray-900 text-4xl weight md:text-2xl ">
             <h1 className={fraunces.className}>Transform your <br /> brand</h1>
             </div>
-            <p className="m-7 mx-10 text-gray-500 text-xl md:m-2 md:text-sm">  We are a full-service creative agency specializing in helping brands grow fast. 
+            <p className="m-7 mx-10 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0">  We are a full-service creative agency specializing in helping brands grow fast. 
     Engage your clients through compelling visuals that do most of the marketing for you.</p>
             <div className={fraunces.className}>
             <Link
