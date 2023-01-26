@@ -80,7 +80,7 @@ function Banner() {
                 />
                 <div className="absolute justify-center">
                 </div>
-                    <h1 className="banner-heading leading-tight uppercase text-4xl text-center  text-white absolute top-1/4"> we are <br className="md:hidden"/> creatives</h1>
+                    <h1 className="banner-heading leading-tight uppercase text-4xl text-center  text-white absolute top-1/4 xl:text-6xl"> we are <br className="md:hidden"/> creatives</h1>
                 <img className="absolute h-32 top-1/2" src="/images/icon-arrow-down.svg" alt="down arrow" />
                 <div className="flex absolute top-1/4 max-md:right-7 max-md:top-32 md:hidden">
                 {isOpen &&
