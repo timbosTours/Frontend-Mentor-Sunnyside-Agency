@@ -34,7 +34,8 @@ function Banner() {
                 <div className={barlow.className}>
         <nav className="flex absolute w-full justify-between px-4 py-3 z-50">
         <div className="flex items-center text-2xl text-white mr-4 md:text-3xl md:-mt-2">
-        <h1 tabIndex={1} className="md:font-bold">sunnyside</h1>
+        <h1 tabIndex={1} className="md:font-extrabold
+        ">sunnyside</h1>
         </div>
             <div className='md:hidden' >
                 <button onClick={handleClick}>

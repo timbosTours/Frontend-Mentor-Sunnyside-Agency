@@ -30,14 +30,14 @@ function Content() {
         />
                 <div className="h-96 text-center m-8 md:h-52 md:text-left md:w-80">
     
-            <div className="text-gray-900 text-4xl weight md:text-2xl ">
+            <div className="text-gray-900 text-4xl weight pt-4 md:text-2xl xl:text-4xl">
             <h1 className={fraunces.className}>Transform your <br /> brand</h1>
             </div>
-            <p className="m-7 mx-10 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0">  We are a full-service creative agency specializing in helping brands grow fast. 
+            <p className="m-7 mx-10 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0 xl:text-lg xl:py-3">  We are a full-service creative agency specializing in helping brands grow fast. 
     Engage your clients through compelling visuals that do most of the marketing for you.</p>
             <div className={fraunces.className}>
             <Link
-                className="text-xl md:text-sm"
+                className="text-xl md:text-sm xl:text-lg"
                     href="/about"
                 >LEARN MORE</Link>
                 <UnderlineYellow/>
@@ -66,13 +66,13 @@ function Content() {
             height={1000}
             />
             <div className="h-96 text-center m-10 md:h-60 md:text-left md:w-80">
-            <div className="text-gray-900 text-4xl md:text-2xl">
+            <div className="text-gray-900 pt-4 text-4xl md:text-2xl xl:text-4xl">
             <h1 className={fraunces.className}>Stand out too the <br /> right audience</h1>
             </div>
-            <p className="m-4 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+            <p className="m-4 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0 xl:text-lg xl:py-3"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places. </p>
             <div className={fraunces.className}>
             <Link
-                className="text-xl md:text-sm"
+                className="text-xl md:text-sm xl:text-lg"
                     href="/about"
                 >LEARN MORE</Link>
                 <UnderlineRose/>
@@ -90,13 +90,13 @@ function Content() {
                 className="max-md:hidden"
             src='/images/desktop/image-graphic-design.jpg'
             alt="cherry"
-            width={1000}
+            width={1200}
             height={1000}    
                 />
-                <div className="absolute top-2/3 text-center text-4xl text-emerald-900 md:text-lg md:-mt-5">
+                <div className="absolute top-2/3 text-center text-4xl text-emerald-900 md:text-lg md:-mt-5 xl:text-4xl">
                     <h1 className={fraunces.className}>Graphic Design</h1>
                     <div className={barlow.className}>
-                        <p className="text-xl p-2 m-4 md:text-sm md:m-0 md:mx-10">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
+                        <p className="text-xl m-4 mx-10 p-2 md:text-sm md:mx-20 xl:text-xl">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
                     </div>
                 </div>
             </div>
@@ -112,13 +112,13 @@ function Content() {
                 className="max-md:hidden"
             src='/images/desktop/image-photography.jpg'
             alt="orange"
-            width={1000}
+            width={1200}
             height={1000}    
                 />
-                <div className="absolute top-2/3 text-center text-4xl text-cyan-800 md:text-lg md:-mt-5 ">
+                <div className="absolute top-2/3 text-center text-4xl text-cyan-900 md:text-lg md:-mt-5 xl:text-4xl">
                     <h1 className={fraunces.className}>Photography</h1>
                     <div className={barlow.className}>
-                        <p className="text-xl m-4 p-2 md:text-sm md:mx-10 md:m-0">  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                        <p className="text-xl m-4 mx-10 p-2 md:text-sm md:mx-20 xl:text-xl ">  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
                     </div>
                 </div>
                 </div>
