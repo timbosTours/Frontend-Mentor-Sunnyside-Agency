@@ -10,16 +10,16 @@ const barlow = Barlow ({
 
 function Footer() {
     return (
-        <div className="bg-teal-200 h-full w-full text-center">
+        <div className="bg-teal-200 h-full text-center xs:w-screen sm:w-full">
         <div className={barlow.className}>
-            <h1 className="text-5xl text-teal-700 font-black m-20 mb-14 tracking-wide">sunnyside</h1>       
+            <h1 className="xs:text-5xl text-teal-700 font-black m-20 mb-14 tracking-wide xxs:m-10 xxs:text-4xl">sunnyside</h1>       
             <ul className="text-teal-600 text-xl font-thin">
-                <Link className="m-7" href="/About">About</Link>
-                <Link className="m-7" href="/Services">Services</Link>
-                <Link className="m-7" href="/Projects">Projects</Link>
+                <Link className="xxs:m-1 xs:m-3 sm:m-7" href="/About">About</Link>
+                <Link className="xxs:m-1 xs:m-4 sm:m-7" href="/Services">Services</Link>
+                <Link className="xxs:m-1 xs:m-4 sm:m-7" href="/Projects">Projects</Link>
             </ul>
             </div>
-            <div className="flex justify-center m-16">
+            <div className="flex justify-center xxs:m-8 xs:m-16 ">
                 <Image
                 className="m-6 mb-20 hover:cursor-pointe"
                     src={"/images/icon-facebook.svg"}

@@ -17,7 +17,7 @@ function Testimonials() {
         <>
         <div className="text-center">
             <div className={fraunces.className}>
-                    <h1 className="text-2xl tracking-widest m-10 md:mb-0 text-gray-400">CLIENT TESTIMONIALS</h1>
+                    <h1 className="xs:text-2xl tracking-widest m-10 md:mb-0 text-gray-400">CLIENT TESTIMONIALS</h1>
             </div>
                 <div className="md:grid md:grid-cols-3">
             <div className="md:m-0">        
@@ -88,28 +88,28 @@ function Testimonials() {
                     className=""
                     src="/images/mobile/image-gallery-milkbottles.jpg"
                     alt=""
-                    width={500}
+                    width={400}
                     height={400}
                 />
                 <Image
                     className=""
                     src="/images/mobile/image-gallery-orange.jpg"
                     alt=""
-                    width={500}
+                    width={400}
                     height={400}
                 />
                 <Image
                     className=""
                     src="/images/mobile/image-gallery-cone.jpg"
                     alt=""
-                    width={500}
+                    width={400}
                     height={400}
                 />
                 <Image
                     className=""
                     src="/images/mobile/image-gallery-sugar-cubes.jpg"
                     alt=""
-                    width={500}
+                    width={400}
                     height={400}
                 />
             </div>

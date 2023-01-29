@@ -30,10 +30,10 @@ function Banner() {
 
     return (
         <div className={fraunces.className}>
-            <header className="relative flex justify-center" >
+            <header className="relative flex justify-center w-full" >
                 <div className={barlow.className}>
         <nav className="flex absolute w-full justify-between px-4 py-3 z-50">
-        <div className="flex items-center text-2xl text-white mr-4 md:text-3xl md:-mt-2">
+        <div className="flex items-center text-3xl text-white xxs:ml-1 ml-3 md:text-3xl xl:text-4xl md:-mt-2">
         <h1 tabIndex={1} className="md:font-extrabold
         ">sunnyside</h1>
         </div>
@@ -80,9 +80,9 @@ function Banner() {
                 />
                 <div className="absolute justify-center">
                 </div>
-                    <h1 className="banner-heading leading-tight uppercase text-4xl text-center  text-white absolute top-1/4 xl:text-6xl"> we are <br className="md:hidden"/> creatives</h1>
+                    <h1 className="banner-heading leading-tight uppercase xs:text-3xl text-center  text-white absolute top-1/4 xl:text-6xl"> we are <br className="md:hidden"/> creatives</h1>
                 <img className="absolute h-32 top-1/2" src="/images/icon-arrow-down.svg" alt="down arrow" />
-                <div className="flex absolute top-1/4 max-md:right-7 max-md:top-32 md:hidden">
+                <div className="flex absolute top-1/4 max-md:right-7 xs:top-32 xxs:top-24 md:hidden">
                 {isOpen &&
                         <Dropbox />}
                 </div>
