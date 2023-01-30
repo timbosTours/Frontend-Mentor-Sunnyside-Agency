@@ -96,7 +96,7 @@ function Content() {
                 <div className="absolute top-2/3 text-center sm:text-4xl text-emerald-900  xs:text-2xl md:text-lg sm:-mt-5 xl:text-4xl">
                     <h1 className={fraunces.className}>Graphic Design</h1>
                     <div className={barlow.className}>
-                        <p className="xxs:text-sm xs:text-sm sm:text-md sm:m-4 mx-10 p-2 md:text-sm md:mx-20 xl:text-xl">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
+                        <p className="xxs:text-sm xs:text-sm sm:text-base sm:m-4 mx-10 p-2 md:text-sm md:mx-20 md:-my-2 lg:my-1 lg:px-20 xl:text-xl">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@ function Content() {
                 <div className="absolute top-2/3 text-center sm:text-4xl text-teal-900  xs:text-2xl md:text-lg md:-mt-5 xl:text-4xl">
                     <h1 className={fraunces.className}>Photography</h1>
                     <div className={barlow.className}>
-                        <p className="xxs:text-sm xs:text-sm sm:text-md xs:m-4 mx-10 p-2 md:text-sm md:mx-20 xl:text-xl ">  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                        <p className="xxs:text-sm xs:text-sm sm:text-base xs:m-4 mx-10 p-2 md:text-sm md:mx-20 md:-my-2 lg:my-1 lg:px-20 xl:text-xl ">  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
                     </div>
                 </div>
                 </div>
