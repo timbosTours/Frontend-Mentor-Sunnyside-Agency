@@ -37,10 +37,10 @@ function Content() {
     Engage your clients through compelling visuals that do most of the marketing for you.</p>
             <div className={fraunces.className}>
             <Link
-                className="text-xl md:text-sm xl:text-lg"
+                className="text-xl md:text-sm xl:text-lg  hover:cursor-pointer"
                     href="/about"
-                >LEARN MORE</Link>
-                <UnderlineYellow/>
+                >LEARN MORE
+                            <UnderlineYellow/></Link>
                         </div>
     
             </div>
@@ -72,7 +72,7 @@ function Content() {
             <p className="xxs:text-sm xs:text-base m-4 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0 xl:text-lg xl:py-3"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places. </p>
             <div className={fraunces.className}>
             <Link
-                className="text-xl md:text-sm xl:text-lg"
+                className="text-xl md:text-sm xl:text-lg hover:cursor-pointer"
                     href="/about"
                 >LEARN MORE</Link>
                 <UnderlineRose/>

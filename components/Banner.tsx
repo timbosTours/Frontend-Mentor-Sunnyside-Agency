@@ -5,14 +5,10 @@ import Dropbox from './Dropbox'
 import Triangle from './Triangle'
 import Link from 'next/link'
 
-// TODO
-    // - set smaller breakpoint
-    // - fix dropbox position 
-
 
 
 const fraunces = Fraunces({
-    weight: '900',
+    weight: ['600', '700', '800', '900' ],
     subsets: ['latin'],
 })
 
@@ -57,10 +53,12 @@ function Banner() {
         </Link>
         <Link href="Projects" className="nav-link">
             Projects
-        </Link>
-        <Link href="Contact" className="px-4 py-2 font-bold text-black bg-white rounded-full hover:bg-transparent focus:outline-none focus:shadow-outline-blue active:bg-blue-800 mr-2">
-            Contact
-        </Link>
+                            </Link>
+                            <span className={fraunces.className}>
+        <Link href="Contact" className="px-5 py-3 font-extrabold text-xs text-black bg-white hover:text-white hover:bg-opacity-40 rounded-full focus:outline-none focus:shadow-outline-blue active:bg-blue-800 mr-2">
+            CONTACT
+                                </Link>
+                            </span>
         </ul>
             </nav>
         </div>
