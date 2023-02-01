@@ -35,12 +35,14 @@ function Content() {
             </div>
             <p className="xxs:text-sm xs:text-base m-7 mx-10 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0 xl:text-lg xl:py-3">  We are a full-service creative agency specializing in helping brands grow fast. 
     Engage your clients through compelling visuals that do most of the marketing for you.</p>
-            <div className={fraunces.className}>
+                    <div className={fraunces.className}>
+                        
             <Link
-                className="text-xl md:text-sm xl:text-lg  hover:cursor-pointer"
+                className="text-xl md:text-sm xl:text-lg  group-hover:cursor-pointer"
                     href="/about"
-                >LEARN MORE
-                            <UnderlineYellow/></Link>
+                >LEARN MORE</Link>
+                                <UnderlineYellow />
+
                         </div>
     
             </div>

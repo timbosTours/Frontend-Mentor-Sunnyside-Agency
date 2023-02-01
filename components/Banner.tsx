@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import Image from 'next/image'
 import { Fraunces, Barlow } from '@next/font/google'
 import Dropbox from './Dropbox'
-import Triangle from './Triangle'
 import Link from 'next/link'
 
 
@@ -29,10 +28,10 @@ function Banner() {
             <header className="relative flex justify-center w-full" >
                 <div className={barlow.className}>
         <nav className="flex absolute w-full justify-between px-4 py-3 z-50">
-        <div className="flex items-center text-3xl text-white xxs:ml-1 ml-3 md:text-3xl xl:text-4xl md:-mt-2">
+        <Link href="/" className="flex items-center text-3xl text-white xxs:ml-1 ml-3 md:text-3xl xl:text-4xl md:-mt-2">
         <h1 tabIndex={1} className="md:font-extrabold
         ">sunnyside</h1>
-        </div>
+        </Link>
             <div className='md:hidden' >
                 <button onClick={handleClick}>
                     <Image

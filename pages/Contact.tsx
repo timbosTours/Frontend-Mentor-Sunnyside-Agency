@@ -1,8 +1,13 @@
 import React from 'react'
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <>
+      <Banner />
+      <Footer/>
+    </>
   )
 }
 
