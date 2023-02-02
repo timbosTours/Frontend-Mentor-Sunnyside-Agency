@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Barlow, Fraunces } from '@next/font/google'
 import Link from 'next/link'
 import UnderlineYellow from './UnderlineYellow'
@@ -18,6 +18,9 @@ const barlow = Barlow({
 })
 
 function Content() {
+    const [hovered, setHovered] = useState(false)
+
+
     return (
         <main>
             <section className="md:grid md:grid-cols-2 place-items-center">
@@ -37,11 +40,13 @@ function Content() {
     Engage your clients through compelling visuals that do most of the marketing for you.</p>
                     <div className={fraunces.className}>
                         
-            <Link
+                        <Link
+                            onMouseOver={() => { setHovered(hovered) }}
                 className="text-xl md:text-sm xl:text-lg  group-hover:cursor-pointer"
                     href="/about"
-                >LEARN MORE</Link>
-                                <UnderlineYellow />
+                >LEARN MORE
+                            <UnderlineYellow hovered={hovered}/>
+                        </Link>
 
                         </div>
     
