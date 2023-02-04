@@ -9,6 +9,7 @@ import Image from 'next/image'
 import Testimonials from './Testimonials'
 
 
+
 const fraunces = Fraunces({
     weight: ['900'],
     subsets: ['latin']
@@ -44,7 +45,7 @@ function Content() {
                     <div className={fraunces.className}>
                         
                         <Link
-                            onMouseOver={() => { setYellowHovered(yellowHovered) }}
+                            onMouseEnter={() => { setYellowHovered(yellowHovered) }}
                             onMouseLeave={() => { setYellowHovered(!yellowHovered) }}
                             
                 className="text-xl md:text-sm xl:text-lg  group-hover:cursor-pointer"
