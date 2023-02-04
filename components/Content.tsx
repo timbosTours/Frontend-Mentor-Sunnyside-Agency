@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { Barlow, Fraunces } from '@next/font/google'
 import Link from 'next/link'
 import UnderlineYellow from './UnderlineYellow'
+import DarkUnderlineYellow from './DarkUnderlineYellow'
 import UnderlineRose from './UnderlineRose'
+import DarkUnderlineRose from './DarkUnderlineRose'
 import Image from 'next/image'
 import Testimonials from './Testimonials'
 
@@ -18,7 +20,8 @@ const barlow = Barlow({
 })
 
 function Content() {
-    const [hovered, setHovered] = useState(false)
+    const [yellowHovered, setYellowHovered] = useState(false)
+    const [roseHovered, setRoseHovered] = useState(false)
 
 
     return (
@@ -41,11 +44,13 @@ function Content() {
                     <div className={fraunces.className}>
                         
                         <Link
-                            onMouseOver={() => { setHovered(hovered) }}
+                            onMouseOver={() => { setYellowHovered(yellowHovered) }}
+                            onMouseLeave={() => { setYellowHovered(!yellowHovered) }}
+                            
                 className="text-xl md:text-sm xl:text-lg  group-hover:cursor-pointer"
                     href="/about"
                 >LEARN MORE
-                            <UnderlineYellow hovered={hovered}/>
+                            {yellowHovered ? <DarkUnderlineYellow /> : <UnderlineYellow/>}
                         </Link>
 
                         </div>
@@ -78,12 +83,18 @@ function Content() {
             </div>
             <p className="xxs:text-sm xs:text-base m-4 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0 xl:text-lg xl:py-3"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places. </p>
             <div className={fraunces.className}>
-            <Link
-                className="text-xl md:text-sm xl:text-lg hover:cursor-pointer"
+                        
+                        <Link
+                            onMouseOver={() => { setRoseHovered(roseHovered) }}
+                            onMouseLeave={() => { setRoseHovered(!roseHovered) }}
+                            
+                className="text-xl md:text-sm xl:text-lg  group-hover:cursor-pointer"
                     href="/about"
-                >LEARN MORE</Link>
-                <UnderlineRose/>
-            </div>
+                >LEARN MORE
+                            {roseHovered ? <DarkUnderlineRose /> : <UnderlineRose/>}
+                        </Link>
+
+                        </div>
             </div>
             <div className="relative ">
             <Image
