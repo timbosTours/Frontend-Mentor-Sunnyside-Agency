@@ -30,9 +30,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./sunnyside-agency-app/public/images/screenshots/screenshot-desktop.png)
-![](./sunnyside-agency-app/public/images/screenshots/screenshot-mobile.png)
-![](./sunnyside-agency-app/public/images/screenshots/screenshot-mobile-active.png.png)
+![](./public/images/screenshots/screenshot-desktop.png)
+![](./public/images/screenshots/screenshot-mobile.png)
+![](./public/images/screenshots/screenshot-mobile-active.png)
 
 
 ### Links
