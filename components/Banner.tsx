@@ -27,7 +27,7 @@ function Banner() {
         <div className={fraunces.className}>
             <header className="relative flex justify-center w-full" >
                 <div className={barlow.className}>
-        <nav tabIndex={1} className="flex absolute w-full justify-between px-4 py-3 z-50">
+        <nav tabIndex={0} className="flex absolute w-full justify-between px-4 py-3 z-50">
         <Link href="/" className="flex items-center text-3xl text-white xxs:ml-1 ml-3 md:text-3xl xl:text-4xl md:-mt-2">
         <h1 tabIndex={0} className="md:font-extrabold
         ">sunnyside</h1>
@@ -43,22 +43,22 @@ function Banner() {
                     />
                 </button>
         </div>
-        <ul className='hidden md:block md:m-2'>
-        <Link tabIndex={1} href="/About" className="nav-link">
+        <span className='hidden md:block md:m-2'>
+        <Link tabIndex={0} href="/About" className="nav-link">
             About
         </Link>
-        <Link tabIndex={1} href="/Services" className="nav-link">
+        <Link tabIndex={0} href="/Services" className="nav-link">
             Services
         </Link>
-        <Link tabIndex={1} href="Projects" className="nav-link">
+        <Link tabIndex={0} href="Projects" className="nav-link">
             Projects
                             </Link>
                             <span className={fraunces.className}>
-        <Link tabIndex={1} href="Contact" className="px-5 py-3 font-extrabold text-xs text-black bg-white hover:text-white hover:bg-opacity-40 rounded-full focus:outline-none focus:shadow-outline-blue active:bg-blue-800 mr-2">
+        <Link tabIndex={0} href="Contact" className="px-5 py-3 font-extrabold text-xs text-black bg-white hover:text-white hover:bg-opacity-40 rounded-full focus:outline-none focus:shadow-outline-blue active:bg-blue-800 mr-2">
             CONTACT
                                 </Link>
                             </span>
-        </ul>
+        </span>
             </nav>
         </div>
                 <Image
@@ -78,7 +78,9 @@ function Banner() {
                 <div className="absolute justify-center">
                 </div>
                     <h2 tabIndex={0} className="banner-heading leading-tight uppercase xs:text-3xl text-center  text-white absolute top-1/4 xl:text-6xl"> we are <br className="md:hidden"/> creatives</h2>
-                <img className="absolute h-32 top-1/2" src="/images/icon-arrow-down.svg" alt="down arrow" />
+                <Image className="absolute h-32 top-1/2" src="/images/icon-arrow-down.svg" alt="down arrow"
+                height={50}
+                width={40}/>
                 <div className="flex absolute top-1/4 max-md:right-7 xs:top-32 xxs:top-24 md:hidden">
                 {isOpen &&
                         <Dropbox />}

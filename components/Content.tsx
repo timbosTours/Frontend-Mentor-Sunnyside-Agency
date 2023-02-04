@@ -50,7 +50,7 @@ function Content() {
                             onMouseLeave={() => { setYellowHovered(!yellowHovered) }}
                             
                 className="text-xl md:text-sm xl:text-lg  group-hover:cursor-pointer"
-                    href="/about"
+                    href="/About"
                 >LEARN MORE
                             {yellowHovered ? <DarkUnderlineYellow /> : <UnderlineYellow/>}
                         </Link>
@@ -83,7 +83,7 @@ function Content() {
             <div className="text-gray-900 pt-4 xxs:text-xl xs:text-4xl md:text-2xl xl:text-4xl">
             <h4 tabIndex={0} className={fraunces.className}>Stand out too the <br /> right audience</h4>
             </div>
-            <p tabIndex={0} className="xxs:text-sm xs:text-base m-4 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0 xl:text-lg xl:py-3"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places. </p>
+            <p tabIndex={0} className="xxs:text-sm xs:text-base m-4 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0 xl:text-lg xl:py-3"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we`ll build and extend your brand in digital places. </p>
             <div className={fraunces.className}>
                         
                         <Link
@@ -92,7 +92,7 @@ function Content() {
                             onMouseLeave={() => { setRoseHovered(!roseHovered) }}
                             
                 className="text-xl md:text-sm xl:text-lg  group-hover:cursor-pointer"
-                    href="/about"
+                    href="/About"
                 >LEARN MORE
                             {roseHovered ? <DarkUnderlineRose /> : <UnderlineRose/>}
                         </Link>
@@ -117,7 +117,7 @@ function Content() {
                 <div className="absolute top-2/3 text-center sm:text-4xl text-emerald-900  xs:text-2xl md:text-lg sm:-mt-5 xl:text-4xl">
                     <h5 tabIndex={0} className={fraunces.className}>Graphic Design</h5>
                     <div className={barlow.className}>
-                        <p tabIndex={0} className="xxs:text-sm xs:text-sm sm:text-base sm:m-4 mx-10 p-2 md:text-sm md:mx-20 md:-my-2 lg:my-1 lg:px-20 xl:text-xl">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
+                        <p tabIndex={0} className="xxs:text-sm xs:text-sm sm:text-base sm:m-4 mx-10 p-2 md:text-sm md:mx-20 md:-my-2 lg:my-1 lg:px-20 xl:text-xl">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client`s attention.</p>
                     </div>
                 </div>
             </div>

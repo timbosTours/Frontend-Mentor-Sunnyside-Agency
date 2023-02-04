@@ -36,7 +36,7 @@ function Testimonials() {
                     <h5 tabIndex={0} className="text-xl m-3">Emily R.</h5>
                 </div>
                 <div className={barlow.className}>
-                    <h6 tabIndex={0}className="text-gray-400">Marketing Director</h6>
+                    <h6 tabIndex={0}className="text-gray-600">Marketing Director</h6>
                             </div>
                         </div>
                     </div>
@@ -50,13 +50,13 @@ function Testimonials() {
             />
             <div>
                 <div className={barlow.className}>
-                    <p tabIndex={0} className="m-10 text-gray-600 text-lg">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+                    <p tabIndex={0} className="m-10 text-gray-600 text-lg">Sunnyside`s enthusiasm coupled with their keen interest in our brand`s success made it a satisfying and enjoyable experience.</p>
                 </div>
                 <div className={fraunces.className}>
                     <h5 tabIndex={0} className="text-xl m-3">Thomas S.</h5>
                 </div>
                 <div className={barlow.className}>
-                    <h6 tabIndex={0} className="text-gray-400">Chief Operating Officer</h6>
+                    <h6 tabIndex={0} className="text-gray-600">Chief Operating Officer</h6>
                 </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ function Testimonials() {
                     <h5 tabIndex={0} className="text-xl m-3">Jennie F.</h5>
                 </div>
                 <div className={barlow.className}>
-                    <h6 tabIndex={0} className="text-gray-400">Business Owner</h6>
+                    <h6 tabIndex={0} className="text-gray-600">Business Owner</h6>
                 </div>
                 </div>
                     </div>
