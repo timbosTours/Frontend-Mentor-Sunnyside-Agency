@@ -46,8 +46,8 @@ function Content() {
                         
                         <Link
                             tabIndex={0}
-                            onMouseEnter={() => { setYellowHovered(yellowHovered) }}
-                            onMouseLeave={() => { setYellowHovered(!yellowHovered) }}
+                            onMouseEnter={() => { setYellowHovered(true) }}
+                            onMouseLeave={() => { setYellowHovered(false) }}
                             
                 className="text-xl md:text-sm xl:text-lg  group-hover:cursor-pointer"
                     href="/About"
@@ -88,8 +88,8 @@ function Content() {
                         
                         <Link
                             tabIndex={0}
-                            onMouseOver={() => { setRoseHovered(roseHovered) }}
-                            onMouseLeave={() => { setRoseHovered(!roseHovered) }}
+                            onMouseEnter={() => { setRoseHovered(true) }}
+                            onMouseLeave={() => { setRoseHovered(false) }}
                             
                 className="text-xl md:text-sm xl:text-lg  group-hover:cursor-pointer"
                     href="/About"
