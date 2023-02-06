@@ -26,7 +26,7 @@ function Content() {
 
 
     return (
-        <main>
+        <>
             <section className="md:grid md:grid-cols-2 place-items-center">
             <Image
             className="md:hidden"
@@ -37,7 +37,7 @@ function Content() {
         />
                 <div className="h-96 text-center m-8 md:h-52 md:text-left md:w-80">
     
-            <div className="text-gray-900 xxs:text-xl xs:text-4xl pt-4 md:text-2xl xl:text-4xl">
+            <div className="border-0 text-gray-900 xxs:text-xl xs:text-4xl pt-4 md:text-2xl xl:text-4xl">
             <h3 tabIndex={0} className={fraunces.className}>Transform your <br /> brand</h3>
             </div>
             <p tabIndex={0} className="xxs:text-sm xs:text-base m-7 mx-10 text-gray-500 text-xl md:m-2 md:text-sm md:ml-0 xl:text-lg xl:py-3">  We are a full-service creative agency specializing in helping brands grow fast. 
@@ -145,7 +145,7 @@ function Content() {
                 </div>
             </section>
             <Testimonials/>
-        </main>
+        </>
     )
 }
 
