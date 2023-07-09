@@ -21,7 +21,7 @@ function Testimonials() {
             </div>
                 <div className="md:grid md:grid-cols-3">
             <div className="md:m-0">        
-            <Image
+            <img
                     className="m-auto rounded-full mt-10"
                     src={"/images/image-emily.jpg"}
                     alt={'header image'}
@@ -41,7 +41,7 @@ function Testimonials() {
                         </div>
                     </div>
             <div className="md:-m-4">
-            <Image
+            <img
                     className="m-auto rounded-full mt-14"
                     src={"/images/image-thomas.jpg"}
                     alt={'header image'}
@@ -61,7 +61,7 @@ function Testimonials() {
                         </div>
                     </div>
             <div>
-            <Image
+            <img
                     className="m-auto rounded-full mt-14 md:mt-10"
                     src={"/images/image-jennie.jpg"}
                     alt={'header image'}
@@ -84,56 +84,56 @@ function Testimonials() {
                 </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4">
-                <Image
+                <img
                     className="md:hidden"
                     src="/images/mobile/image-gallery-milkbottles.jpg"
                     alt=""
                     width={400}
                     height={400}
                 />
-                <Image
+                <img
                     className="max-md:hidden"
                     src="/images/desktop/image-gallery-milkbottles.jpg"
                     alt=""
                     width={800}
                     height={800}
                 />
-                <Image
+                <img
                     className="md:hidden"
                     src="/images/mobile/image-gallery-orange.jpg"
                     alt=""
                     width={400}
                     height={400}
                 />
-                <Image
+                <img
                     className="max-md:hidden"
                     src="/images/desktop/image-gallery-orange.jpg"
                     alt=""
                     width={800}
                     height={800}
                 />
-                <Image
+                <img
                     className="md:hidden"
                     src="/images/mobile/image-gallery-cone.jpg"
                     alt=""
                     width={400}
                     height={400}
                 />
-                <Image
+                <img
                     className="max-md:hidden"
                     src="/images/desktop/image-gallery-cone.jpg"
                     alt=""
                     width={800}
                     height={800}
                 />
-                <Image
+                <img
                     className="md:hidden"
                     src="/images/mobile/image-gallery-sugar-cubes.jpg"
                     alt=""
                     width={400}
                     height={400}
                 />
-                <Image
+                <img
                     className="max-md:hidden"
                     src="/images/desktop/image-gallery-sugarcubes.jpg"
                     alt=""
